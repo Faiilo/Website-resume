@@ -1,0 +1,21 @@
+{
+  "personalInfo": {
+    "name": "Дмитрий Владиславович Филенко",
+    "specialization": "Студент-разработчик: Angular • Frontend",
+    "pitch": "Создаю надёжные веб-приложения. Умею учиться быстро и решать нетривиальные задачи.",
+    "education": "ГБПОУ МО «Люберецкий техникум имени Ю.А. Гагарина»",
+    "specialty": "09.02.07 «Информационные системы и программирование»",
+    "graduationYear": 2027
+  },
+  "contacts": {
+    "github": "https://github.com/faiilo",
+    "telegram": "https://t.me/hhwov",
+    "vk": "https://vk.com/kugsha",
+    "email": "fluffylope@mail.ru"
+  },
+  "skills": {
+    "programming": ["JavaScript", "TypeScript", "HTML", "CSS"],
+    "tools": ["Angular", "Git"],
+    "soft": ["Тайм-менеджмент", "Дисциплина", "Работа в команде", "Быстрое обучение"]
+  }
+}

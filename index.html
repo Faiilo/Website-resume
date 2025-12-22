@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дмитрий Филенко - резюме</title>
+    <meta name="description" content="Сайт-резюме Дмитрия Филенко, студента-разработчика">
+    <meta name="keywords" content="Angular, Frontend, разработчик, резюме">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="profile-image">
+                    <img src="assets/images/profilepicture.png" alt="Филенко Дмитрий" class="profile-photo">
+                </div>
+                <div class="header-text">
+                    <h1 class="full-name">Дмитрий Владиславович Филенко</h1>
+                    <h2 class="specialization">Студент-разработчик: Angular • Frontend</h2>
+                    <p class="sell-pitch">Создаю надёжные веб-приложения. Умею учиться быстро и решать нетривиальные задачи.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Навигация -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Главная</a></li>
+                <li><a href="#courses" class="nav-link">Курсы</a></li>
+                <li><a href="#practice" class="nav-link">Практика</a></li>
+                <li><a href="#self-development" class="nav-link">Саморазвитие</a></li>
+                <li><a href="#about" class="nav-link">Обо мне</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Основной контент -->
+    <main class="main-content">
+        <!-- Главная секция -->
+        <section id="home" class="section hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h2 class="section-title">Добро пожаловать в моё портфолио</h2>
+                    <p class="hero-text">Я студент Люберецкого техникума имени Ю.А. Гагарина, активно развиваюсь в области веб-разработки.</p>
+                    <div class="cta-buttons">
+                        <a href="#projects" class="btn btn-primary">Смотреть проекты</a>
+                        <a href="#courses" class="btn btn-secondary">Изучить навыки</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Курсы -->
+        <section id="courses" class="section courses-section">
+            <div class="container">
+                <h2 class="section-title">Пройденные курсы</h2>
+                <div class="filter-buttons" id="courseFilters">
+                    <button class="filter-btn active" data-filter="all">Все</button>
+                    <button class="filter-btn" data-filter="frontend">Frontend</button>
+                    <button class="filter-btn" data-filter="sber">СберУниверситет</button>
+                    <button class="filter-btn" data-filter="vk">VK Education</button>
+                    <button class="filter-btn" data-filter="other">Другие</button>
+                </div>
+                <div class="courses-grid" id="coursesContainer">
+                </div>
+            </div>
+        </section>
+
+        <!-- Практика -->
+        <section id="practice" class="section practice-section">
+            <div class="container">
+                <h2 class="section-title">Производственная практика</h2>
+                <div class="practice-content">
+                    <div class="practice-text">
+                        <h3>МУ МВД России "Люберецкое"</h3>
+                        <p>Проходил производственную практику по специальности "Информационные системы и программирование".</p>
+                        <div class="practice-details">
+                            <h4>Выполненные задачи:</h4>
+                            <ul>
+                                <li>Нумерование архивных заявлений</li>
+                                <li>Прошивка архивных заявлений</li>
+                                <li>Разбор архива</li>
+                                <li>Поиск гражданина в картотеке</li>
+                            </ul>
+                            <h4>Используемые инструменты:</h4>
+                            <div class="tools-tags">
+                                <span class="tag">Дрель</span>
+                                <span class="tag">Карандаш</span>
+                            </div>
+                        </div>
+                        <a href="https://github.com/Faiilo/Twine-PP.git" class="btn btn-primary" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Интерактивная новелла о практике
+                        </a>
+                    </div>
+                    <div class="practice-images">
+                        <div class="image-grid">
+                            <img src="assets/images/practice1.jpg" alt="Практика" class="practice-img">
+                            <img src="assets/images/practice2.jpg" alt="Практика" class="practice-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Саморазвитие -->
+        <section id="self-development" class="section development-section">
+            <div class="container">
+                <h2 class="section-title">Дорожная карта саморазвития</h2>
+                <div class="roadmap">
+                    <div class="roadmap-item">
+                        <div class="roadmap-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="roadmap-content">
+                            <h3>Frontend разработка</h3>
+                            <div class="skills-tags">
+                                <span class="skill-tag">HTML/CSS</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">TypeScript</span>
+                                <span class="skill-tag">Angular</span>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="roadmap-item">
+                        <div class="roadmap-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="roadmap-content">
+                            <h3>Генеративные модели</h3>
+                            <div class="skills-tags">
+                                <span class="skill-tag">GigaChat</span>
+                                <span class="skill-tag">Kandinsky</span>
+                                <span class="skill-tag">Промпт-инжиниринг</span>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-bar" style="width: 40%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="roadmap-item">
+                        <div class="roadmap-icon">
+                            <i class="fas fa-calculator"></i>
+                        </div>
+                        <div class="roadmap-content">
+                            <h3>SMM</h3>
+                            <div class="skills-tags">
+                                <span class="skill-tag">Аналитика</span>
+                                <span class="skill-tag">Ведение соцсетей</span>
+                                <span class="skill-tag">Контент-стратегия</span>
+                                <span class="skill-tag">Бизнес-логика</span>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Обо мне -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <h2 class="section-title">Обо мне</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Профессиональная биография</h3>
+                        <p>Учусь в ГБПОУ МО «Люберецкий техникум имени Ю.А. Гагарина» по специальности 09.02.07 «Информационные системы и программирование».</p>
+                        <p>Заинтересован в frontend. Постоянно изучаю новые технологии и инструменты.</p>
+                        
+                        <h3>Контакты</h3>
+                        <div class="social-links">
+                            <a href="https://github.com/faiilo" class="social-link" target="_blank">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://t.me/hhwov" class="social-link" target="_blank">
+                                <i class="fab fa-telegram"></i> Telegram
+                            </a>
+                            <a href="https://vk.com/kugsha" class="social-link" target="_blank">
+                                <i class="fab fa-vk"></i> ВКонтакте
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-container">
+                        <h3>Навыки</h3>
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h4>Языки программирования</h4>
+                                <div class="skill-items">
+                                    <span class="skill-item">JavaScript</span>
+                                    <span class="skill-item">TypeScript</span>
+                                    <span class="skill-item">HTML</span>
+                                    <span class="skill-item">CSS</span>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-category">
+                                <h4>Инструменты и технологии</h4>
+                                <div class="skill-items">
+                                    <span class="skill-item">Angular</span>
+                                    <span class="skill-item">Git</span>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-category">
+                                <h4>Soft Skills</h4>
+                                <div class="skill-items">
+                                    <span class="skill-item">Тайм-менеджмент</span>
+                                    <span class="skill-item">Дисциплина</span>
+                                    <span class="skill-item">Работа в команде</span>
+                                    <span class="skill-item">Быстрое обучение</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p class="copyright">
+                        © 2025 Дмитрий Филенко, ГБПОУ МО «Люберецкий техникум имени Героя Советского Союза, лётчика-космонавта Ю.А. Гагарина»
+                    </p>
+                    <p class="year">Год окончания обучения: 2027</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/nikita-bryukhanov/resume-website" class="footer-link" target="_blank">
+                        <i class="fab fa-github"></i> Репозиторий веб-сайта
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модальное окно для сертификатов -->
+    <div class="modal" id="certificateModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img id="modalImage" src="" alt="Сертификат">
+            <div class="modal-info">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDescription"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
