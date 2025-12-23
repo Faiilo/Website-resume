@@ -210,4 +210,46 @@ document.addEventListener('DOMContentLoaded', function() {
     checkSavedTheme();
     setupModalClose();
     setupSmoothNavigation();
+
+});
+
+// Добавьте этот код в ваш script.js
+
+// Фильтрация проектов
+function setupProjectFilters() {
+    const filterButtons = document.querySelectorAll('.project-filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+    
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Убрать активный класс
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+            
+            // Получить фильтр
+            const filter = button.dataset.filter;
+            
+            // Показать/скрыть проекты
+            projectCards.forEach(card => {
+                if (filter === 'all' || card.dataset.category === filter) {
+                    card.style.display = 'block';
+                    setTimeout(() => {
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    }, 10);
+                } else {
+                    card.style.opacity = '0';
+                    card.style.transform = 'translateY(20px)';
+                    setTimeout(() => {
+                        card.style.display = 'none';
+                    }, 300);
+                }
+            });
+        });
+    });
+}
+
+// Инициализация при загрузке
+document.addEventListener('DOMContentLoaded', function() {
+    setupProjectFilters();
 });
